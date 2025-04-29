@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="slider.php" method="post" enctype="multipart/form-data">
+        <span>
+            <label>titulo</label>
+            <input type="text" name="titulo" class="titulo">
+        </span>
+        <input type="file" name="foto[]" multiple id="archivo" accept="image/*">
+    
+        <input type="submit" name="subir" value="subir" class="boton"> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imagencss.jpg);
+    text-align: center;
+}
+
+form {
+    background: greenyellow;
+    border: 3px cadetblue solid;
+    border-radius: 10px;
+    margin: auto;
+    width: 350px;
+    height: 100%;
+    margin-top: 200px;
+}
+
+span {
+    display: block;
+    margin: 20px;
+}
+
+.titulo {
+    display: inline-block;
+}
+
+input {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.boton {
+    background: rgb(255, 178, 77);
+    color: rgb(85, 83, 83);
+    border: .5px solid rgb(85, 84, 84);
+    padding: 3px 10px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
