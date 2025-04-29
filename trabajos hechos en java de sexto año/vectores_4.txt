@@ -1,0 +1,30 @@
+package vectores_4;
+
+import javax.swing.JOptionPane;
+
+public class Vectores_4 {
+    public static void main(String[] args) {
+        
+        int[] vector= new int [8];
+        int i=0, par=0, impar=0;
+        String espacio= " ";
+        
+        for(i=0;i<8;i++) {
+            vector[i] = Integer.parseInt(JOptionPane.showInputDialog("ingrese numeros: " +i));
+            
+            if(vector[i]%2==0) {
+                par=par+1;
+            }
+            else {
+                impar=impar+1;
+            }
+        }
+        
+        for(i=0;i<8;i++) {
+            espacio=espacio+vector[i];
+            espacio+=" ";
+        }
+        JOptionPane.showMessageDialog(null,"los numeros ingresados son: "+espacio+"\nlos numeros pares son: "+par+"\nlos numeros inpares son: "+impar);
+    
+    }
+}

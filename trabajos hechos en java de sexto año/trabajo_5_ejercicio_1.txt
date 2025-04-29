@@ -1,0 +1,37 @@
+/*En un comercio se puede abonar en efectivo o con tarjeta. Si abona en efectivo
+tiene un descuento del 5% y si abona con tarjeta tendrá un recargo del 10%. 
+Mostrar por pantalla el monto inicial de la compra, el descuento o el recargo 
+y el monto final a pagar.*/
+
+package trabajo_5_ejercicio_1;
+
+import java.util.Scanner;
+
+public class Trabajo_5_ejercicio_1 {
+    public static void main(String[] args) {
+        int monto, descuento, total, recarga, total2;
+        String pago;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese monto a pagar: ");
+        monto=input.nextInt();
+        System.out.println("ingrese metodo de pago: ");
+        pago=input.next();
+        
+        if(pago.compareToIgnoreCase("efectivo")==0) {
+            descuento=monto*5/100;
+            total=monto-descuento;
+            System.out.println("monto inicial: "+monto);
+            System.out.println("el descuento es: "+descuento);
+            System.out.println("el monto final es: "+total);
+            
+        } else {
+            recarga=monto*10/100;
+            total2=monto+recarga;
+            System.out.println("monto inicial: "+monto);
+            System.out.println("la recarga es: "+recarga);
+            System.out.println("el monto final es: "+total2);
+        }
+    }
+    
+}

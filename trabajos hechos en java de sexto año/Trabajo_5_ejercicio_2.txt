@@ -1,0 +1,26 @@
+package trabajo_5_ejercicio_2;
+
+import java.util.Scanner;
+
+public class Trabajo_5_ejercicio_2 {
+    public static void main(String[] args) {
+        String pregunta, respuesta;
+        
+        Scanner input=new Scanner (System.in);
+        
+        System.out.println("quieres que te haga una adivinanza? ");
+        pregunta=input.next();
+        
+        if(pregunta.equals("si")) {
+            System.out.println("que tiene 4 patas y no se mueve: ");
+            respuesta=input.next();
+            if(respuesta.equals("mesa")) {
+                System.out.println("respuesta correcta");
+            } else {
+                System.out.println("respuesta incorrecta");
+            }
+        } else {
+            System.out.println("igual tampoco se la iba a decir XD");
+        }
+    }
+}

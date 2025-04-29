@@ -1,0 +1,23 @@
+/* Ingresar dos números enteros y mostrar el resultado de la división y el resto de la misma.
+   Ej.: 5/2=4 el resto es 1. */
+
+package trabajo._3_ejercicio_2;
+
+import java.util.Scanner;
+
+public class Trabajo_3_ejercicio_2 {
+    public static void main(String[] args) {
+        int dividendo, divisor, total, resto;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingresar el dividendo: ");
+        dividendo=input.nextInt();
+        System.out.println("ingresar el divisor: ");
+        divisor=input.nextInt();
+        total=dividendo/divisor;
+        resto=dividendo%divisor;
+        System.out.println("la division es: "+total);
+        System.out.println("el resto es: "+resto);
+    }
+    
+}

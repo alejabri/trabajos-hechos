@@ -1,0 +1,57 @@
+package trabajo_en_clases_9;
+
+import javax.swing.JOptionPane;
+
+public class Trabajo_en_clases_9 {
+    public static void main(String[] args) {
+        int suma, resta, multiplicacion, division;
+        char mensajew;
+        
+        do {
+        
+        String a = JOptionPane.showInputDialog(null,"ingrese el primer numero:");
+        String b = JOptionPane.showInputDialog(null,"ingrese el segundo numero:");
+        int num1 = Integer.parseInt(a);
+        int num2 = Integer.parseInt(b);
+        
+        String opc = JOptionPane.showInputDialog(null,"1- suma \n2- resta \n3- multiplicacion \n4- division \nelija una opcion:");
+        int opcion = Integer.parseInt(opc);
+        
+        switch(opcion) {
+            case 1: 
+                suma = num1+num2;
+                JOptionPane.showMessageDialog(null,"la suma es: "+ suma);
+                break;
+            case 2: 
+                resta = num1-num2;
+                JOptionPane.showMessageDialog(null,"la resta es: "+ resta);
+                break;
+            case 3: 
+                multiplicacion = num1*num2;
+                JOptionPane.showMessageDialog(null,"la multiplicacion es: "+ multiplicacion);
+                break;
+            case 4: 
+                if (num2 != 0) {
+                    division = num1/num2;
+                }
+                else {
+                    String div = JOptionPane.showInputDialog(null,"el divisor no debe ser 0. \nponga otro numero");
+                    int num3 = Integer.parseInt(div);
+                    division = num1/num3;
+                }
+                JOptionPane.showMessageDialog(null,"la division es: "+ division);
+                break;
+                
+            default: JOptionPane.showMessageDialog(null,"opcion no existente");
+        }
+        
+        String m = JOptionPane.showInputDialog(null,"desea volver al inicio? S/N");
+        char mensaje = m.charAt(0);
+        
+        mensajew = mensaje;
+        
+        }while( mensajew == 's' || mensajew == 'S');
+        
+    }
+    
+}

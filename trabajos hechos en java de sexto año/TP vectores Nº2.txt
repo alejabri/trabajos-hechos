@@ -1,0 +1,21 @@
+/*Leer 5 números y mostrarlos en orden inverso al introducido.*/
+package vectores2;
+
+import java.util.Scanner;
+
+public class Vectores2 {
+    public static void main(String[] args) {
+        int i;
+        int[] numeros=new int[5];
+        
+        Scanner mostrar = new Scanner(System.in);
+        for(i=0;i<5;i++) {
+            System.out.println("ingrese un numero: ");
+            numeros[i]= mostrar.nextInt();
+        }
+        
+        for(i=5;i>0;i--) {
+            System.out.println("los numeros ingresados son: "+numeros[i-1]); //buscar por que añ poner -1 lo muestra de forma inversa
+        }
+    }
+}

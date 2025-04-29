@@ -1,0 +1,33 @@
+package trabajo_5_ejercicio_3;
+
+import java.util.Scanner;
+
+public class Trabajo_5_ejercicio_3 {
+    public static void main(String[] args) {
+        int num1, num2;
+        String pal1, pal2;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese el primer numero: ");
+        num1=input.nextInt();
+        System.out.println("ingrese el segundo numero: ");
+        num2=input.nextInt();
+        
+        System.out.println("ingrese la primera palabra: ");
+        pal1=input.next();
+        System.out.println("ingrese la segunda palabra: ");
+        pal2=input.next();
+        
+        if(num1>num2) {
+            System.out.println(" "+num1+" "+num2);
+        } else {
+            System.out.println(" "+num2+" "+num1);
+        }
+        
+        if(pal1.equals(pal2)) {
+            System.out.println(" "+pal1+" "+pal2);
+        } else {
+            System.out.println(" "+pal2+" "+pal1);
+        }
+    }
+}

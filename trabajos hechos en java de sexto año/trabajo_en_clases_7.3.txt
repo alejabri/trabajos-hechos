@@ -1,0 +1,36 @@
+/*en una empresa se requiere calcular el sueldo semanal de cada uno de sus 20 obreros el
+salario se obtienen de la siguiente forma, si el obrero trabaja 40 horas o menos se le paga
+200 pesos la hora.
+si trabaja mas de 40 horas se le paga 250 por cada una de las primeras 40 horas
+al finalizar el programa se desea saber cuantos obreros trabajaron horas extras
+y cuantos es el monto total en concepto de sueldos a pagar por la empresa*/
+package trabajo_en_clases_7.pkg3;
+
+import java.util.Scanner;
+
+public class Trabajo_en_clases_73 {
+    public static void main(String[] args) {
+        int horas, sueldo, suma1=0, suma2=0, b=0, suma, resta, total=0;
+        
+        for(int i=0; i<20;i++) {
+            Scanner input=new Scanner (System.in);
+            System.out.println("ingrese horas trabajadas: ");
+            horas=input.nextInt();
+            
+            if(horas<=40) {
+                sueldo=200*horas;
+                suma1=suma1+sueldo;
+            } else {
+                resta=horas-40;
+                suma=resta*250;
+                sueldo=8000+suma;
+                b++;
+                suma2=suma2+sueldo;
+            }
+            total=suma1+suma2;
+        }
+        System.out.println("obreros que trabajaron horas extras: "+b);
+        System.out.println("monto total: "+total);
+    }
+    
+}

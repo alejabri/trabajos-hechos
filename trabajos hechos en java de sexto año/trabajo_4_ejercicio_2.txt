@@ -1,0 +1,35 @@
+/* En un comercio de electrodomésticos se puede abonar la compra en 1 o varias
+cuotas. Hasta 3 cuotas no hay recargo, pero si la cantidad de cuotas es mayor a 
+tres, se cobrara un recargo del 15% . Mostrar por pantalla el monto de la compra, 
+la cantidad de cuotas, el monto total a pagar (monto de la compra+recargo) ,  
+y el precio de cada cuota. */
+
+package trabajo_4_ejercicio_2;
+
+import java.util.Scanner;
+
+public class Trabajo_4_ejercicio_2 {
+    public static void main(String[] args) {
+        int monto,monto2, cuotas, recargo, total;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese monto a pagar: ");
+        monto=input.nextInt();
+        System.out.println("ingrese cantidad de cuotas: ");
+        cuotas=input.nextInt();
+        
+        if(cuotas >= 3) {
+        recargo=monto*15/100;
+        total=monto+recargo;
+        System.out.println("monto de la compra: " +monto);
+        System.out.println("cantidad de cuotas: " +cuotas);
+        System.out.println("total a pagar: " +total);
+        System.out.println("precio de cada couta: " +recargo);       
+                } else {
+            System.out.println("monto de la compra: " +monto);
+            System.out.println("cantidad de cuotas: " +cuotas);
+            System.out.println("total a pagar: " +monto);
+        }
+    }
+    
+}

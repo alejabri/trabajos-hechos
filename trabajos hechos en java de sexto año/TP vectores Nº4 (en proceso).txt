@@ -1,0 +1,25 @@
+/*Leer 10 números enteros. Debemos mostrarlos en el siguiente orden: el primero,
+el último, el segundo, el penúltimo, el tercero, etc.*/
+package vector4;
+
+import java.util.Scanner;
+
+public class Vector4 {
+    public static void main(String[] args) {
+        int i;
+        int[] numeros=new int[10];
+        
+        Scanner mostrar = new Scanner(System.in);
+        for(i=0;i<10;i++) {
+            System.out.println("ingrese un numero: ");
+            numeros[i]= mostrar.nextInt();
+        }
+        
+        for(i=0;i<10;i++) {
+            System.out.println();
+        }
+        
+    }
+    
+}
+//1,10,2,9,3,8,4,7,5,6

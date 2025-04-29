@@ -1,0 +1,22 @@
+package trabajo_5_ejercicio_4;
+
+import java.util.Scanner;
+
+public class Trabajo_5_ejercicio_4 {
+    public static void main(String[] args) {
+        String pal1, pal2;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese la primera palabra: ");
+        pal1=input.next();
+        System.out.println("ingrese la segunda palabra: ");
+        pal2=input.next();
+        
+        if(pal1.compareToIgnoreCase(pal2)>0) {
+            System.out.println(" "+pal1+" "+pal2);
+        } else {
+            System.out.println(" "+pal2+" "+pal1);
+        }
+    }
+    
+}

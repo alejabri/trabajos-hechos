@@ -1,0 +1,46 @@
+/*realizar un programa para consultar horarios y dias de practica de actividades,
+segun el siguiente cuadro:
+
+|------------|---------------------|------------|
+|  ACTIVIDAD |        DIAS         |  HORARIOS  |  
+|------------|---------------------|------------|
+| voley      | lunes y viernes     | 17 a 19 hs |
+| basquet    | martes y jueves     | 18 a 20 hs |
+| natacion   | miercoles y viernes | 14 a 16 hs |
+|------------|---------------------|------------|
+
+el programa presentara el siguiente menu:
+A-voley
+B-basquet
+C-natacion
+
+el usuario ingresara una opcion (a,b o c) y el programa emitira la siguiente leyenda:
+LA ACTIVIDAD <<actividad>> SE PRACTICA LOS DIAS <<dias>> EN EL HORARIO DE<<horario>>*/
+
+package trabajo_en_clases_6;
+
+import java.util.Scanner;
+
+public class Trabajo_en_clases_6 {
+    public static void main(String[] args) {
+        char opcion;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("\nopciones: \nA-voley \nB-basquet \nC-natacion");
+        
+        System.out.println("\nelija una de las opciones: ");
+        opcion=input.next().charAt(0);
+        
+        switch (opcion) {
+            case 'a': System.out.println("la actividad de voley se practica los dias lunes y viernes en el horario de 17 a 19 hs ");
+            break;
+            case 'b': System.out.println("la actividad de basquet se practica los dias martes y jueves en el horario de 18 a 20 hs ");
+            break;
+            case 'c': System.out.println("la actividad de natacion se practica los dias miercoles y viernes en el horario de 14 a 16 hs ");
+            break;
+            default: System.out.println("opcion no existente");
+        }
+        
+    }
+    
+}

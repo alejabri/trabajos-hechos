@@ -1,0 +1,29 @@
+/* pida dos numeros reales y muestre el cociente. debe pedir
+nuevamente el divisor en el caso de ingresar un cero */
+
+package ventanas_7;
+
+import javax.swing.JOptionPane;
+
+public class Ventanas_7 {
+    public static void main(String[] args) {
+        int division, division2;
+        
+        String x = JOptionPane.showInputDialog("ingrese el primer numero ");
+        String x2 = JOptionPane.showInputDialog("ingrese el segundo numero ");
+        int num1 = Integer.parseInt(x);
+        int num2 = Integer.parseInt(x2);
+        
+        division=num1/num2;
+        
+        if(num2 == 0) {
+            String x3 = JOptionPane.showInputDialog(null,"division no posible, por favor ingrese un nuevo divisor");
+            int numr = Integer.parseInt(x3);
+            
+            division2=num1/numr;
+            JOptionPane.showMessageDialog(null,"la division es: "+division2);
+        } else {
+            JOptionPane.showMessageDialog(null,"la division es: "+division);
+        }
+    }
+}

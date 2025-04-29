@@ -1,0 +1,33 @@
+/* Teniendo en cuenta las horas trabajadas por día en un mes por un empleado y 
+la cantidad de días en el mes, calcular su sueldo, sabiendo que si trabaja 8 hs.
+por día o menos, se paga $190 la hora y si trabaja más de 8hs ,la cantidad de 
+horas que exceden a las 8hs., se paga $250 la hora. */
+
+package trabajo_4_ejercicio_3;
+
+import java.util.Scanner;
+
+public class Trabajo_4_ejercicio_3 {
+
+    public static void main(String[] args) {
+        int horas, dias, mes, sueldo, sueldo2;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese cantidad de horas trabajadas diariamente: ");
+        horas=input.nextInt();
+        System.out.println("ingrese cantidad de dias trabajados en el mes: ");
+        dias=input.nextInt();
+        
+        if(horas<=8) {
+            mes=horas*dias;
+            sueldo=mes*190;
+            System.out.println("su sueldo es de: "+sueldo);
+        }
+        else {
+            mes=horas*dias;
+            sueldo2=mes*250;
+            System.out.println("su sueldo es de: "+sueldo2);
+        }
+    }
+    
+}

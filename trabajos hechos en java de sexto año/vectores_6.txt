@@ -1,0 +1,27 @@
+/*crear un array de numeros de 100 posiciones, que contendra los numeros 
+del 1 al 10. obten la suma de todos ellos y la media*/
+package vectores_6;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class Vectores_6 {
+    public static void main(String[] args) {
+        
+        int[] vector= new int[100];
+        int suma=0, media=0, i=0;
+        
+        for(i=0; i<100;i++) {
+            System.out.println(vector[i]+i+1);
+        }
+        
+        for(i=0; i<100; i++) {
+            suma=suma+vector[i]+i+1;
+        }
+        
+        media=suma/i;
+        System.out.println("la media es: "+media);
+        System.out.println("la suma es: "+suma);
+    }
+    
+}

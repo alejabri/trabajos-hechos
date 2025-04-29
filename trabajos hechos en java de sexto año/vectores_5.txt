@@ -1,0 +1,29 @@
+package vectores_5;
+
+import javax.swing.JOptionPane;
+
+public class Vectores_5 {
+    public static void main(String[] args) {
+        
+        int[] vectores = new int[5];
+        int i=0, suma=0;
+        String mostrar = "";
+        
+        for(i=0; i<5; i++) {
+           vectores[i]= Integer.parseInt(JOptionPane.showInputDialog("ingrese el valor "+i+":"));
+        }
+        
+        for(i=0; i<5; i++) {
+            suma=suma+vectores[i];
+        }
+        
+        for(i=0; i<5; i++) {
+            mostrar=mostrar+vectores[i];
+            mostrar+= " ";
+        }
+        
+        JOptionPane.showMessageDialog(null,"los numeros ingresados son: "+mostrar);
+        JOptionPane.showMessageDialog(null,"la suma es: "+suma);
+    }
+    
+}

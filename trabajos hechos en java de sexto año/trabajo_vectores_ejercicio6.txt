@@ -1,0 +1,31 @@
+/* Crea un array de números donde le indicamos por teclado el tamaño del array,
+rellenaremos el array con números aleatorios entre 0 y 9, al final muestra por 
+pantalla el valor de cada posición y la suma de todos los valores */
+package trabajo_vectores_ejercicio6;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class Trabajo_vectores_ejercicio6 {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner (System.in);
+        Random rnd = new Random();
+        int num, suma=0;
+        
+        System.out.print("ingrese la cantidad de numeros que quiera: ");
+        num = input.nextInt();
+        
+        int numeros[] = new int[num];
+        
+        for(int i=0; i<numeros.length; i++) {
+            int aleatorio = rnd.nextInt(11);
+            System.out.println("numero "+(i+1)+": "+aleatorio);
+            suma += aleatorio;
+        }
+        
+        System.out.println("la suma de todos los numeros son: "+suma);
+        
+    }
+    
+}

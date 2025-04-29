@@ -1,0 +1,19 @@
+/* pida dos numeros reales y muestre la suma de los mismos */
+package ventanas_5;
+
+import javax.swing.JOptionPane;
+
+public class Ventanas_5 {
+    public static void main(String[] args) {
+        int suma;
+        
+        String x = JOptionPane.showInputDialog("ingrese el primer numero ");
+        String x2 = JOptionPane.showInputDialog("ingrese el segundo numero ");
+        int num1 = Integer.parseInt(x);
+        int num2 = Integer.parseInt(x2);
+        suma=num1+num2;
+        JOptionPane.showMessageDialog(null,"la suma es: "+suma);
+        
+    }
+    
+}

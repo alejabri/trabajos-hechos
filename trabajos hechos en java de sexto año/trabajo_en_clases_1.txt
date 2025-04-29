@@ -1,0 +1,52 @@
+package trabajo_en_clases_1;
+
+import java.util.Scanner;
+
+public class Trabajo_en_clases_1 {
+    public static void main(String[] args) {
+        float sueld, anti, SA, tot, prem;
+        char nom;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese su nombre: ");
+        nom=input.next().charAt(0);
+        System.out.println("ingrese su sueldo mensual: ");
+        sueld=input.nextFloat();
+        System.out.println("ingrese su antiguedad: ");
+        anti=input.nextFloat();
+        
+        SA=12*sueld;
+        
+        System.out.println("bienvenido" +nom);
+        System.out.println("su sueldo mensual es: " +sueld);
+        
+        if(anti<1) {
+            prem=sueld*10/100;
+            tot=sueld+prem;
+            System.out.println("su premio por su antiguedad es de: " +prem);
+            System.out.println("el total de su sueldo es de: " +tot);
+        }else {
+            if (anti <2){
+           prem=sueld*15/100;
+           tot=sueld + prem;
+           System.out.println("su premio por su antiguedad es de: "+ prem);
+           System.out.println("El total de su sueldo es de: "+ tot);
+            }else {
+                if(anti <10){
+                   prem=sueld*20/100;
+                   tot=sueld + prem;
+                   System.out.println("su premio por su antiguedad es de: "+ prem);
+                   System.out.println("El total de su sueldo es de: "+ tot);
+                } else {
+                    if(anti>=10){
+                    prem=sueld*25/100;
+                    tot=sueld + prem;
+                    System.out.println("su premio por su antiguedad es de: "+ prem);
+                    System.out.println("El total de su sueldo es de: "+ tot);
+                    }
+                }
+            }
+        }
+    }
+    
+}

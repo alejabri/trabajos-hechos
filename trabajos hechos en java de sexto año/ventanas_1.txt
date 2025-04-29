@@ -1,0 +1,12 @@
+/* muestre por pantalla el mensaje "mi primer cuadro de dialogo" */
+package ventanas_1;
+
+import javax.swing.JOptionPane;
+
+public class Ventanas_1 {
+    public static void main(String[] args) {
+        
+        JOptionPane.showMessageDialog(null,"mi primer cuadro de dialogo");
+    }
+    
+}

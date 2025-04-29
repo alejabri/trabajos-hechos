@@ -1,0 +1,41 @@
+/* el anses requiere clasificar a las personas que se jubilaran. existen tres tipos
+de jubilaciones por antiguedad joven, por antiguedad adulta y por edad. las personas 
+que pueden jubilarse por edad deben tener 65 años o mas y una antiguedad en su empleo 
+de menos de 25 años. las personas que pueden jubilarse por antiguedad joven deben tener 
+menos de 65 años y una antiguedad en su empleo de 35 años de 35 años o mas. las 
+personas que pueden jubilarse por antiguedad adulta deben tener 60 años o mas y una
+antiguedad de su empleo de 25 años o mas. determinar que tipo de jubilacion
+tendra una persona*/
+
+//tambien se puede hacer con switch
+
+package trabajo_en_clases_5;
+
+import java.util.Scanner;
+
+public class Trabajo_en_clases_5 {   
+    public static void main(String[] args) {
+        int edad, antiguedad;
+        
+        Scanner input=new Scanner (System.in); 
+        System.out.println("ingrese su edad: ");
+        edad=input.nextInt();
+        System.out.println("ingrese su antiguedad laboral: ");
+        antiguedad=input.nextInt();
+        
+        if(edad>=65 && antiguedad<25) {
+            System.out.println("usted tiene jubilacion por edad");
+        } else {
+            if(edad<65 && antiguedad>=35) {
+                System.out.println("usted tiene jubilacion por antiguedad");
+            } else {
+                if(edad>=60 && antiguedad>=25) {
+                    System.out.println("usted tiene jubilacion por antiguedad adulta");
+                } else {
+                    System.out.println("no concuerda la edad o la antiguedad");
+                }
+            }  
+        }
+    }
+    
+}

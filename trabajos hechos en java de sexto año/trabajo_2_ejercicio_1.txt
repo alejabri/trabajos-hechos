@@ -1,0 +1,26 @@
+/* Un maestro desea saber qué porcentaje de hombres y que porcentaje de mujeres hay en un grupo de estudiantes. */
+
+package trabajo_2_ejercicio_1;
+
+import java.util.Scanner;
+
+public class Trabajo_2_ejercicio_1 {
+    public static void main(String[] args) {
+        int hombres, mujeres, suma, porcentaje, porcentaje2;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese cantidad de hombres: ");
+        hombres=input.nextInt();
+        System.out.println("ingrese cantidad de mujeres: ");
+        mujeres=input.nextInt();
+        suma=hombres+mujeres;
+        porcentaje=hombres*100/suma;
+        System.out.println("el ´porcentaje de hombres es: "+porcentaje+"%");
+        porcentaje2=mujeres*100/suma;
+        System.out.println("el porcentaje de mujeres es: "+porcentaje2+"%");
+        
+        
+        
+    }
+    
+}

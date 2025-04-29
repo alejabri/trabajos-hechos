@@ -1,0 +1,30 @@
+/*ingresar la patente y el monto de la multa de 50 autos indicar cuantos superan
+los 20.000 pesos y del total cobrado que porcentaje representa las sumas de estos 
+ultimos con respecto al total cobrado de multas*/
+package trabajo_en_clases_10;
+
+import javax.swing.JOptionPane;
+
+public class Trabajo_en_clases_10 {
+    public static void main(String[] args) {
+        int multas=0, porcentaje=0, mayor=0;
+        
+        for(int i=0;i<5;i++) {
+            
+            String pa=JOptionPane.showInputDialog(null, "ingrese patente");
+            char patente= pa.charAt(0);
+            String mu=JOptionPane.showInputDialog(null, "ingrese monto de la multa");
+            int multa= Integer.parseInt(mu);
+        
+            multas=multas+multa;
+            
+            if(multa>20000) {
+                mayor=mayor+multa;
+                
+            }
+        }
+    porcentaje=mayor*100/multas;
+    JOptionPane.showMessageDialog(null, "el porcentaje es "+ porcentaje + "%");
+    }
+    
+}

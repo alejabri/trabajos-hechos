@@ -1,0 +1,13 @@
+/* muestre por pantalla los mensajes "estoy programando en" y "java" */
+package ventanas_2;
+
+import javax.swing.JOptionPane;
+
+public class Ventanas_2 {
+    public static void main(String[] args) {
+        
+        JOptionPane.showMessageDialog(null,"estoy programando en");
+        JOptionPane.showMessageDialog(null,"java");
+    }
+    
+}

@@ -1,0 +1,37 @@
+/*el estado esta construyendo un nuevo barrio y ofrece las casas segun las siguientes 
+condiciones: si los ingresos del comprador son de $100.000 peoso o mas el anticipo
+sera del 15% del costo de la casa y el resto se distribuira en pagos mensuales a 
+pagar 10 años. silos ingresos del comprador son menores a $100.000 pesos el anticipo
+sera del 30% del costo de la casa y el resto se distribuira en pagos mensuales a 
+pagar en 7 años ¿cuanto debera pagar una persona que quiere comprar una casa?*/
+
+package trabajo_en_clases_3;
+
+import java.util.Scanner;
+
+public class Trabajo_en_clases_3 {
+    public static void main(String[] args) {
+        int ingresos, casa, anticipo, mes, resta;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese costo de la casa: ");
+        casa=input.nextInt();
+        System.out.println("ingrese sus ingresos: ");
+        ingresos=input.nextInt();
+        
+        if(ingresos>100000) {
+            anticipo=casa*15/100;
+            resta=casa-anticipo;
+            mes=resta/120;
+            System.out.println("anticipo: "+anticipo);
+            System.out.println("pagos por 120 mese: "+mes);
+        }else {
+            anticipo=casa*30/100;
+            resta=casa-anticipo;
+            mes=resta/84;
+            System.out.println("anticipo: "+anticipo);
+            System.out.println("pagos por 120 mese: "+mes);
+        }
+    }
+    
+}

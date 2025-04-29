@@ -1,0 +1,26 @@
+/*dada una lista de numeros sumarlos y mostrar el resultado. el listado finaliza
+cuando el operador lo indique*/
+package trabajo_en_clases_7.pkg1;
+
+import java.util.Scanner;
+
+public class Trabajo_en_clases_71 {
+    public static void main(String[] args) {
+        int num=0, suma=0;
+        char i;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("desea continuar? S/N");
+        i=input.next().charAt(0);
+        
+        while(i=='s' || i=='S') {
+            System.out.println("ingrese un numero: ");
+            num=input.nextInt();
+            System.out.println("desea continuar? S/N");
+            i=input.next().charAt(0);
+            suma=suma+num;
+        }
+        System.out.println("la suma es: "+suma);
+    }
+    
+}

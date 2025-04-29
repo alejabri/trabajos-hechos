@@ -1,0 +1,19 @@
+/* Ingresar un valor en grados Celsius y convertirlos a Fahrenheit.
+   °F=°C*9/5+32 */
+
+package trabajo_3_ejercicio_3;
+
+import java.util.Scanner;
+
+public class Trabajo_3_ejercicio_3 {
+    public static void main(String[] args) {
+        int c, f;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingresar grados celcius: ");
+        c=input.nextInt();
+        f=c*9/5+32;
+        System.out.println("en fahrenheit serian: "+f);
+    }
+    
+}

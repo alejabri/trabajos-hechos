@@ -1,0 +1,16 @@
+/* pida un numero entero y muestre su cuadrado */
+package ventanas_4;
+
+import javax.swing.JOptionPane;
+
+public class Ventanas_4 {
+    public static void main(String[] args) {
+        int cuadrado=0;
+        String x = JOptionPane.showInputDialog("ingrese un numero");
+        int numero = Integer.parseInt(x);
+        cuadrado=numero*numero;
+        
+        JOptionPane.showMessageDialog(null,"el numero al ingresado al cuadrado es: "+cuadrado);
+    }
+    
+}

@@ -1,0 +1,23 @@
+/* crear una aplicacion que pida tu nombre y pregunte si "eres mujer".
+en caso afirmatio, responder "bienvenida _____",
+caso contrario, "bienvenido _____"*/
+package ventanas_9;
+
+import javax.swing.JOptionPane;
+
+public class Ventanas_9 {
+    public static void main(String[] args) {
+        
+        String x = JOptionPane.showInputDialog(null,"ingrese su nombre");
+        int x2 = JOptionPane.showConfirmDialog(null,"eres mujer?");
+        
+        if(x2==JOptionPane.YES_OPTION) {
+            JOptionPane.showMessageDialog(null,"bienvenida "+x);
+        } else {
+                if(x2==JOptionPane.NO_OPTION) {
+                JOptionPane.showMessageDialog(null,"bienvenido "+x);
+            }
+        }
+    }
+    
+}

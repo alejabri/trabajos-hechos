@@ -1,0 +1,19 @@
+/* Un cliente de Edesur tiene un consumo de 150 KW en su factura de luz, le cobraron 21 % de IVA. Averiguar ¿cuánto gastó? */
+
+package trabajo_2_ejercicio_2;
+
+import java.util.Scanner;
+
+public class Trabajo_2_ejercicio_2 {
+    public static void main(String[] args) {
+        int kw, total, iva;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese precio de los KW: ");
+        kw=input.nextInt();
+        iva=kw*21/100;
+        total=iva+kw;
+        System. out.println("el gasto total es: "+total);
+    }
+    
+}

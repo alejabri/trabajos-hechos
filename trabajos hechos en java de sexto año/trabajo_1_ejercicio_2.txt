@@ -1,0 +1,23 @@
+/* Calcular y mostrar la superficie y el perímetro de un rectángulo */
+
+package trabajo_1_ejercicio_2;
+
+import java.util.Scanner;
+
+public class Trabajo_1_ejercicio_2 {
+    public static void main(String[] args) {
+        int lado, superficie, total, total_2;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese el primer lado del rectangulo: ");
+        lado=input.nextInt();
+        System.out.println("ingrese el segundo lado del rectangulo: ");
+        superficie=input.nextInt();
+        total=lado*superficie;
+        System.out.println("la superficie del rectangulo es: "+total);
+        total_2=2*(lado+superficie);
+        System.out.println("el perimetro del rectangulo es: "+total_2);
+        
+    }
+    
+}

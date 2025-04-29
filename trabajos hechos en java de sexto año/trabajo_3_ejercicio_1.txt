@@ -1,0 +1,19 @@
+/* Ingresar un número, calcular el doble y mostrarlo */
+
+package trabajo_3_ejercicio_1;
+
+import java.util.Scanner;
+
+public class Trabajo_3_ejercicio_1 {
+    public static void main(String[] args) {
+        int numero, total;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese un numero: ");
+        numero=input.nextInt();
+        total=numero*2;
+        System.out.println("la multiplicacion es: "+total);
+        
+    }
+    
+}

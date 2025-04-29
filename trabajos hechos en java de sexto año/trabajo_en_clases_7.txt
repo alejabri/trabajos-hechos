@@ -1,0 +1,67 @@
+/*la municipidad de avellaneda lanzo una moratoria para regularizar deudas de 
+impuestos. crear un programa que una vez ingresada la deuda permite elegir el
+plan de pago:
+A-pago en una cuota 50% de descuento
+B-pago en 3 cuotas 30% de descuento
+C-pago en 6 cuotas 15% de descuento
+D-pago en 12 cuotas 10% de descuento
+mostrar por pantalla la deuda inicial, cantidad de cuotas, el porcentaje de
+descuento, el descuento calculado en pesos, la deuda final y el precio de 
+cada cuota*/
+
+package trabajo_en_clases_7;
+
+import java.util.Scanner;
+
+public class Trabajo_en_clases_7 {
+    public static void main(String[] args) {
+        int cuotas=0, cuota=0, porcentaje=0, deuda, descuento=0, total=0;
+        char opcion;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese deuda: ");
+        deuda=input.nextInt();
+        System.out.println("elija opcion de pago: ");
+        opcion=input.next().charAt(0);
+        
+        switch(opcion) {
+            case 'a':
+                descuento=deuda*50/100;
+                total=deuda-descuento;
+                cuotas=total;
+                cuota=1;
+                porcentaje=50;
+                break;
+            case 'b': 
+                descuento=deuda*30/100;
+                total=deuda-descuento;
+                cuotas=total/3;
+                cuota=3;
+                porcentaje=30;
+                break;
+            case 'c': 
+                descuento=deuda*25/100;
+                total=deuda-descuento;
+                cuotas=total/6;
+                cuota=6;
+                porcentaje=25;
+                break;
+            case 'd': 
+                descuento=deuda*10/100;
+                total=deuda-descuento;
+                cuotas=total/12;
+                cuota=12;
+                porcentaje=10;
+                break;
+            default: System.out.println("error");
+        }
+        
+        System.out.println("deuda inicial: "+deuda);
+        System.out.println("cantidad de cuotas: "+cuota);
+        System.out.println("porcentaje de descuento: "+porcentaje+"%");
+        System.out.println("calculo del descuento: "+descuento);
+        System.out.println("precio de cada cuota: "+cuotas);
+        System.out.println("deuda final: "+total);
+    }
+    
+}

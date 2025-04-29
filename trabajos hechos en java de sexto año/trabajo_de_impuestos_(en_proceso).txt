@@ -1,0 +1,101 @@
+package trabajo;
+
+import javax.swing.JOptionPane;
+
+public class Trabajo {
+    public static void main(String[] args) {
+        float impuesto=0, total=0, impuesto2=0, total2=0;
+        
+        String ax=JOptionPane.showInputDialog(null,"ingresesu sueldo");
+        float sueldo=Float.parseFloat(ax);
+        
+        String op=JOptionPane.showInputDialog(null,"elija la opcion correspondiente: \n1- Sin cónyuge ni hijos/as \n2- Con cónyuge \n3- Con Cónyuge + 1 hijo/a menor de 18 \n4- Deducción específica Jub, Pen y Ret \n5- Deducción específica Jub, Pen y Ret y con Cónyuge a cargo");
+        int opcion=Integer.parseInt(op);
+        
+        if (sueldo < 97202.06f){
+            total=sueldo;
+            
+            } else {
+                if(sueldo > 97202.06f && sueldo < 194404.13f) {
+                impuesto=sueldo*9/100;
+                total=sueldo-impuesto;
+        
+                } else {
+                    if(sueldo > 194404.14f && sueldo < 291606.19f) {
+                    impuesto=sueldo*12/100;
+                    total=sueldo-impuesto;
+        
+                    } else {
+                        if(sueldo > 291606.20f && sueldo < 388808.27f) {
+                        impuesto=sueldo*15/100;
+                        total=sueldo-impuesto;
+        
+                        } else {
+                            if(sueldo > 388808.28f && sueldo < 583212.39f) {
+                            impuesto=sueldo*19/100;
+                            total=sueldo-impuesto;
+        
+                            } else {
+                                if(sueldo > 583212.40f && sueldo < 777616.51f) {
+                                impuesto=sueldo*23/100;
+                                total=sueldo-impuesto;
+        
+                                } else {
+                                    if(sueldo > 777616.52f && sueldo < 1166424.76f) {
+                                    impuesto=sueldo*27/100;
+                                    total=sueldo-impuesto;
+        
+                                    } else {
+                                        if(sueldo > 1166424.77f && sueldo < 1555233.05f) {
+                                        impuesto=sueldo*31/100;
+                                        total=sueldo-impuesto;
+        
+                                        } else {
+                                            impuesto=sueldo*35/100;
+                                            total=sueldo-impuesto;
+                                            
+                                        }   
+         }   
+                            
+        }   
+                        
+       }   
+                    
+      }   
+                
+     }
+            
+    }
+        
+   }
+        
+        switch(opcion) {
+            case 1:
+                impuesto2=7154.08f;
+                total2=total-impuesto2;
+                break;
+            case 2:
+                impuesto2=13323.58f;
+                total2=total-impuesto2;
+                break;
+            case 3:
+                impuesto2=16687.04f;
+                total2=total-impuesto2;
+                break;
+            case 4:
+                impuesto2=55854.60f;
+                total2=total-impuesto2;
+                break;
+            case 5:
+                impuesto2=6669.50f;
+                total2=total-impuesto2;
+                break;
+            default: JOptionPane.showMessageDialog(null,"opcion no existente");
+
+        }
+        
+        JOptionPane.showMessageDialog(null,"sub total: "+total + "\nimpuesto aplicado del sueldo: "+impuesto + "\nimpuesto segun opcion elejida: "+impuesto2 + "\nsueldo neto: "+ total2);
+        
+  }
+    
+}

@@ -1,0 +1,24 @@
+/*Leer 5 números por teclado y a continuación mostrar el promedio.*/
+package vector3;
+
+import java.util.Scanner;
+
+public class Vector3 {
+    public static void main(String[] args) {
+        
+        int i, promedio=0, num=0;
+        int[] numeros=new int[5];
+        
+        Scanner mostrar = new Scanner(System.in);
+        for(i=0;i<5;i++) {
+            System.out.println("ingrese un numero: ");
+            numeros[i]= mostrar.nextInt();
+        }
+        
+        for(i=0;i<5;i++) {
+            num+=numeros[i];
+            promedio=num/5;
+        }
+        System.out.println("el promedio es: "+promedio);
+    }
+}

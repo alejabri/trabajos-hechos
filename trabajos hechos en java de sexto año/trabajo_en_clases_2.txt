@@ -1,0 +1,52 @@
+/*para realizar la liquidacion de sueldo de una compañia se da el apellido, nombre,
+categoria y antiguedad. se considera que por año trabajado, se aumenta un 2% sobre el total.
+el sueldo basico dependera de la categoria. si es categoria 1 el sueldo basico sera de $20.000
+pesos, categoria 2 y 3 $30.000 pesos, categoria 4 $40.000 pesos, 6 y 7 $60.000 pesos, se pide
+calcular el sueldo*/
+
+package trabajo_en_clases_2;
+
+import java.util.Scanner;
+
+public class Trabajo_en_clases_2 {
+    public static void main(String[] args) {
+        int categoria, antiguedad, aumento, total, suma;
+        String apellido, nombre;
+        
+        Scanner input=new Scanner (System.in);
+        System.out.println("ingrese su apellido: ");
+        apellido=input.next();
+        System.out.println("ingrese su nombre: ");
+        nombre=input.next();
+        System.out.println("ingrese su categoria: ");
+        categoria=input.nextInt();
+        System.out.println("ingrese su antiguedad: ");
+        antiguedad=input.nextInt();
+        
+        switch(categoria) {
+            
+            case 1: categoria=20000; break;
+            case 2: categoria=30000; break;
+            case 3: categoria=30000; break;
+            case 4: categoria=40000; break;
+            case 6: categoria=40000; break;
+            case 7: categoria=40000; break;
+            default: System.out.println("opcion no existente");
+        }
+        
+        if(categoria==5) {
+            System.out.println("vuelva a ingresar los datos");
+        }else {
+            suma=antiguedad*2;
+            aumento=categoria*suma/100;
+            total=categoria+aumento;
+            
+            System.out.println("su apellido es: "+apellido);
+            System.out.println("su nombre es: "+nombre);
+            System.out.println("sueldo de la categoria elegida: "+categoria);
+            System.out.println("su antiguedad es de: "+antiguedad);
+            System.out.println("segun su antiguedad y su categoria el total que va a cobrar es de: "+total);
+        }
+    }
+    
+}

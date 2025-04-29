@@ -1,0 +1,59 @@
+package trabajo_en_clases_8;
+
+//import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Trabajo_en_clases_8 {
+    public static void main(String[] args) {
+        //Scanner input=new Scanner (System.in);
+     float descuento=0, total=0, cuotas=0, cuota=0;
+     int porcentaje=0;
+     
+    String deuda=JOptionPane.showInputDialog(null,"ingrese deudas:");
+    float a=Float.parseFloat(deuda);
+    
+    String opc=JOptionPane.showInputDialog(null, "A- 1 cuota 50% de descuento \n B- 3 cuotas 30% de descuento\n C- 6 cuotas 15% de descuento \n D- 12 cueotas 10% de desucento  \n elija opcion de de pago:");
+    char opcion= opc.charAt(0);
+    
+        switch(opcion){
+            case 'a':
+                case'A':
+                descuento=a*50/100;
+                total=a-descuento;
+                cuota=1;
+                cuotas=total;
+                porcentaje=50;
+                break;
+            case 'b':
+                case 'B':
+                descuento=a*30/100;
+                total=a-descuento;
+                cuota=total/3;
+                cuotas=3;
+                porcentaje=30;
+                break;
+            case 'c':
+                case 'C':
+                descuento=a*25/100;
+                total=a-descuento;
+                cuota=total/6;
+                cuotas=6;
+                porcentaje=25;
+                break;
+            case 'd':
+                case 'D':
+                descuento=a*10/100;
+                total=a-descuento;
+                cuota=total/12;
+                cuotas=12;
+                porcentaje=10;
+                break;
+                
+            default:  JOptionPane.showMessageDialog(null,"opcion no existente");
+            }
+ 
+    JOptionPane.showMessageDialog(null,"deuda inicial: "+a+ "\ncantidad de cuotas: "+cuotas+"\nporcentaje de descuento: "+porcentaje+"%" + "\ncalculo del descuento: $"+descuento+"\nprecio de cada cuota: "+cuota+"\ndeuda final: "+total);
+ 
+    }
+    
+}

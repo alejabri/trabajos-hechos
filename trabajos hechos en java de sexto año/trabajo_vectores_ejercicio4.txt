@@ -1,0 +1,28 @@
+/* Leer 10 números enteros. Debemos mostrarlos en el siguiente orden: 
+el primero, el último, el segundo, el penúltimo, el tercero, etc */
+package trabajo_vectores_ejercicio4;
+
+import java.util.Scanner;
+
+public class Trabajo_vectores_ejercicio4 {
+    public static void main(String[] args) {
+        int[] numeros = new int[10];
+        
+        Scanner inverso = new Scanner (System.in);
+        
+        for(int i=0; i<10; i++) {
+            System.out.print("ingrese el numero "+(i+1)+": ");
+            numeros[i]= inverso.nextInt();
+        }
+        
+        int inicio=0, fin=9;
+        
+        for(int i=0; i<5; i++) {
+            System.out.print(numeros[inicio]+" ");
+            System.out.print(numeros[fin]+" ");
+            inicio++;
+            fin--;
+        }
+    }
+    
+}

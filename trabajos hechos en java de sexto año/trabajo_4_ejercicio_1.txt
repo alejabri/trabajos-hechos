@@ -1,0 +1,36 @@
+/*Dadas las tres notas de los trimestres de un alumno, calcular el promedio, si el 
+resultado es 7 o más, aprueba; si está entre 4 y 6, desaprueba; si es menor a 4 
+esta aplazado. Mostrar la condición del alumno. */
+
+package trabajo_4_ejercicio_1;
+
+import java.util.Scanner;
+
+public class Trabajo_4_ejercicio_1 {
+    public static void main(String[] args) {
+        int nota1, nota2, nota3, promedio;
+        
+        Scanner input=new Scanner(System.in);
+        System.out.println("ingrese primera nota: ");
+        nota1=input.nextInt();
+        System.out.println("ingrese segunda nota: ");
+        nota2=input.nextInt();
+        System.out.println("ingrese tercera nota: ");
+        nota3=input.nextInt();
+        
+        promedio=(nota1+nota2+nota3)/3;
+        
+        if(promedio >= 7) {
+            System.out.println("usted esta aprovado con: " +promedio);
+        }
+        else {
+            if(promedio >= 4) {
+                System.out.println("usted esta desaprobado con: " +promedio);
+            }
+            else {
+                System.out.println("usted esta aplazado con: " +promedio);
+            }
+        }
+    }
+    
+}

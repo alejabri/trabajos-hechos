@@ -1,0 +1,13 @@
+/* ingrese su nombre en un cuadro de dialogo y muestrelo por pantalla*/
+package ventanas_3;
+
+import javax.swing.JOptionPane;
+
+public class Ventanas_3 {
+    public static void main(String[] args) {
+        
+        String x = JOptionPane.showInputDialog("ingrese su nombre");
+        JOptionPane.showMessageDialog(null,"su monbre es: "+x);
+    }
+    
+}

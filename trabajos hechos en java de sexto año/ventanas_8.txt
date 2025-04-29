@@ -1,0 +1,20 @@
+/* mostrar un cuadro de dialogo que pregunte "hoy es lunes" si es correcto,
+mostrar "feliz comienzo de semana", caso contrario, decir "hoy no es lunes!" */
+package ventanas_8;
+
+import javax.swing.JOptionPane;
+
+public class Ventanas_8 {
+    public static void main(String[] args) {
+        
+        int x = JOptionPane.showConfirmDialog(null,"hoy es lunes?");
+        
+        if (x==JOptionPane.YES_OPTION) {
+            JOptionPane.showMessageDialog(null,"feliz comienzo de la semana");
+        } else {
+            if(x==JOptionPane.NO_OPTION) {
+                JOptionPane.showMessageDialog(null,"hoy no es lunes!");
+            }
+        }
+    }
+}

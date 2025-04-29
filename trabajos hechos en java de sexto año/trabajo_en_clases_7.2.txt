@@ -1,0 +1,20 @@
+package trabajo_en_clases_7.pkg2;
+
+import java.util.Scanner;
+
+public class Trabajo_en_clases_72 {
+    public static void main(String[] args) {
+        int i=0, suma=0, num;
+        
+        Scanner input=new Scanner (System.in);
+        
+        while(i<5) {
+            System.out.println("ingrese un numero: ");
+            num=input.nextInt();
+            suma=suma+num;
+            i++;
+        }
+        System.out.println("la suma es: "+suma);
+    }
+    
+}

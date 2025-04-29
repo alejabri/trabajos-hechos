@@ -1,0 +1,29 @@
+package vectores_1;
+
+import java.util.Scanner;
+
+public class Vectores_1 {
+    public static void main(String[] args) {
+        
+        Scanner input= new Scanner(System.in);
+        int[] numeros= new int[10];
+        int a=0, b=0, suma;
+        
+        for(int i=0; i<10; i++)  {
+            System.out.println("ingrese edad: ");
+            numeros[i]=input.nextInt();
+            if (numeros[i] < 18) {
+                
+                a+=a;
+            }else{
+                if (numeros[i] > 25)
+                b+=b;
+            }
+        }
+        suma=numeros[4]+numeros[7];
+        System.out.println("los que superan los 25 son: " +b);
+        System.out.println("los que son menores a 18 son: " +a);
+        System.out.println("la suma es: " +suma);
+    }
+    
+}
