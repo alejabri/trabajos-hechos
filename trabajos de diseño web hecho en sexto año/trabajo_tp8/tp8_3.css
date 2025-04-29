@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(fondo2.jpg);
+}
+
+h1 {
+    background: cyan;
+    border: 1px solid blue;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+nav {
+    background: gray;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 15px 10px 50px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    a {
+        display: block;
+    }
+    
+}

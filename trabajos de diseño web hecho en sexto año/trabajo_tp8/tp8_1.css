@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-image: url(fondo2.jpg);
+}
+
+form {
+    width: 500px;
+    max-width: 100%;
+    padding-bottom: 5px;
+    margin: auto; 
+    margin-top: 220px;
+}
+
+h1 {
+    background: grey;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 5px;
+}
+
+.boton {
+    background: #07169b;
+    color: #ffffff;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.boton:hover {
+    background: #071061;
+    color: #ffffff;
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 200px;
+    border: 2px solid rgb(224, 255, 47);
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+body {
+    text-align: center;
+    background: rgb(207, 94, 74);
+
+}
+
+p, h1{
+    margin: 10px;
+    border-bottom: 1px solid white;
+    font-family: 'Noto Serif JP', serif;
+}
+
+form {
+    background: rgb(250, 177, 250);
+    border: 2px solid pink;
+    box-shadow: 8px 10px 20px 2px rgb(194, 121, 182);
+    margin: auto;
+    margin-top: 8px;
+    border-radius: 5px;
+    width: 350px;
+    max-width: 100%;
+}

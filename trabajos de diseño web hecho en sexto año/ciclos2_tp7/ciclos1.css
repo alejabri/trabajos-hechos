@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background: salmon;
+}
+
+form {
+    background: crimson;
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    border: 2px solid sienna;
+    border-radius: 5px;
+} 
+
+h1 {
+    padding: 10px;
+    display: block;
+}
+
+input {
+    padding: 5px;
+}
+
+.boton {
+    margin: 7px;
+    border: 1px solid rgb(36, 36, 36);
+    color: rgb(105, 36, 196);
+    background: rgb(255, 187, 0);
+    box-shadow: 0 0 50px #f5bd23;
+}
+
+.boton:hover {
+    color: rgb(255, 187, 0);
+    background: rgb(151, 87, 235);
+}

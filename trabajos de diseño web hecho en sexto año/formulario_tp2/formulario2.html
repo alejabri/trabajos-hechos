@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario2.css">
+    <title></title>
+</head>
+<body>
+    <form action="formulario2.php" method="get">
+        <h1>formulario</h1>
+        <span>
+            <label>usuario</label>
+        <input type="text" name="usuario" class="primero">
+        </span>
+        <span>
+            <label>nombre y apellido</label>
+            <input type="text" name="nya">
+        </span>
+        <span>
+            <label>edad</label>
+            <input type="number" name="edad" class="tercero">
+        </span>
+
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" value="femenino" checked id="1" class="radio">
+            <label for="1">femenino</label>
+            <input type="radio" name="sexo" value="masculino" id="2" class="radio">
+            <label for="2">masculino</label>
+        </fieldset>
+
+        <span>
+        <label>biografia</label>
+        <textarea type="text" name="biografia"></textarea>
+        </span>
+        <span>
+            <label class="quinto">color favorito</label>
+            <input type="color" name="color">
+        </span>
+        <span>
+            <label>email</label>
+            <input type="email" name="email" class="sexto">
+        </span>
+        <span>
+            <label>fecha de cumpleaños</label>
+            <input type="date" name="cumpleannos" class="septimo">
+        </span>
+        <span>
+            <label>nacionalidad</label>
+            <input type="text" name="nacionalidad" class="octavo">
+        </span>
+
+        <a><input type="submit" value="generar" class="boton"></a>
+    </form>
+</body>
+</html>
+

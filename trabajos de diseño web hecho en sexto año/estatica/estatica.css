@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+   padding: 0;
+}
+
+h1 {
+    background: red;
+    padding: 20px;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #fff;
+}
+
+a {
+   background: blue;
+   color: white;
+   /*para los display inline y poder usar los de block*/
+   display: inline-block;
+   width: 250px;
+   text-align: center;
+   padding: 5px;
+   border-bottom: 10px solid orange;
+   text-decoration: none;
+}
+
+   a:hover {
+            border-bottom: 10px solid skyblue;
+    }
+
+   nav {
+       background: silver;
+       width: 1100px;
+       margin: 10px auto;
+    }
+
+body {
+      background: pink;
+    }
+
+img {
+     width: 200px;
+     border-radius: 50%;
+     box-shadow: 0 0 50px #ffff00;
+     /*para los display inline*/
+     display: block;
+     margin: auto;
+    }

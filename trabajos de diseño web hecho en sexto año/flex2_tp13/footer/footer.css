@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 15px 20px 15px;
+    align-items: flex-end;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.buscador {
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    padding: 3px 0;
+}
+
+@media screen and (max-width: 300px) {
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 0;
+        align-items: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+    }
+}

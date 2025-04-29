@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background: repeating-radial-gradient(black, black 5px, white 5px, white 10px);*/
+    background: linear-gradient( to right, rgb(84, 0, 100), rgb(179, 49, 179));
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+} 
+
+div {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    padding: 14px;
+    border: 3px solid rgb(116, 116, 116);
+    border-radius: 10px;
+    max-width: 380px;
+    width: 100%;
+    margin: auto;
+    margin-top: 18px;
+    background: rgb(0, 183, 255);
+    font-size: 30px;
+
+}
+
+a:hover {
+    background: rgb(17, 17, 119);
+    transition: .75s;
+    color: white;
+}

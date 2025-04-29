@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background: salmon;
+}
+
+form {
+    padding: 20px;
+    display: block;
+    margin: center;
+}
+
+h1 {
+    padding: 10px;
+    display: block;
+}
+
+span, label {
+    padding: 5px;
+    font-size: x-large; 
+}
+
+input {
+    padding: 5px;
+    margin: 10px;
+}
+
+.boton {
+    margin: 7px;
+    border: 1px solid rgb(36, 36, 36);
+    color: rgb(105, 36, 196);
+    background: rgb(255, 187, 0);
+    box-shadow: 0 0 50px #f5bd23;
+}
+
+.boton:hover {
+    color: rgb(255, 187, 0);
+    background: rgb(151, 87, 235);
+}
+
+span:hover {
+    color: rgb(17, 217, 224);
+}
+
+@media screen and (max-width: 350px){
+    span {
+        display: block;
+    }
+    
+}

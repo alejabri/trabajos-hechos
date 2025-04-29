@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    background: rgb(19, 119, 165);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background: rgb(226, 142, 31);
+    display: block;
+    margin: auto;
+    border: 3px solid rgb(210, 130, 25);
+    width: 500px;
+    max-width: 100%;
+    padding: 40px;
+
+}
+
+a {
+    display: block;
+    margin: 10px;
+    margin-top: 14px;
+}
+
+p {
+    display: inline-block;
+    margin: 10px;
+    color: #fff;
+}
+
+.boton {
+    display: block;
+    width: 150px;
+    padding: 5px;
+    background: rgb(19, 119, 165);
+    color: white;
+    margin: 10px auto;
+
+}
+
+.boton:hover {
+    background: rgb(6, 68, 97);
+}
+
+.planes {
+    background: gray;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 490px){
+    span {
+        display: block;
+    }
+}
